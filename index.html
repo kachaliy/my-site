@@ -17,16 +17,33 @@
             background-color: #121212; /* Темный фон */
             color: #e0e0e0; /* Светлый текст */
             line-height: 1.6;
+            background-image: url('web-page-back 1.webp'); /* Фоновое изображение */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Фиксированный фон */
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7); /* Затемнение фона */
+            z-index: -1;
         }
         .container {
             width: 90%;
             max-width: 900px;
             margin: 40px auto;
-            background: #1e1e1e; /* Темный контейнер */
+            background: rgba(30, 30, 30, 0.9); /* Полупрозрачный контейнер */
             padding: 30px;
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
             border-radius: 12px;
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
         .profile-img {
             width: 180px;
@@ -96,7 +113,7 @@
             text-align: center;
             margin-top: 40px;
             padding: 20px;
-            background-color: #0d47a1; /* Синий фон */
+            background-color: rgba(13, 71, 161, 0.9); /* Полупрозрачный синий фон */
             color: white;
             border-radius: 8px;
         }
