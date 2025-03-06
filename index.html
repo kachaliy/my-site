@@ -1,69 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Kachaliy - Financial Engineering Consultant</title>
+    <title>Алексей Качалий - Консультант по финансовому инжинирингу</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            color: #616161;
+            color: #333;
         }
         .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+        }
+        header {
+            background: url('background-video.mp4') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
             text-align: center;
         }
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #1a237e;
+        header h1 {
+            font-size: 3em;
+            margin: 0;
         }
-        h1 {
-            color: #1a237e;
-            margin-top: 10px;
+        header p {
+            font-size: 1.2em;
+        }
+        section {
+            margin: 50px 0;
         }
         h2 {
-            color: #0d47a1;
-            border-bottom: 2px solid #0d47a1;
+            font-size: 2em;
+            color: #1a237e;
+            border-bottom: 2px solid #1a237e;
             display: inline-block;
-            padding-bottom: 5px;
+            margin-bottom: 20px;
         }
         p {
-            font-size: 18px;
+            font-size: 1.1em;
             line-height: 1.6;
         }
-        .section {
-            margin-top: 30px;
-            padding: 10px;
-            text-align: left;
+        .skills, .experience {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill, .job {
+            flex: 1 1 calc(50% - 20px);
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .skill:hover, .job:hover {
+            transform: translateY(-5px);
+        }
+        .contact {
+            text-align: center;
         }
         .contact a {
             color: #0d47a1;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
         }
         .contact a:hover {
-            text-decoration: underline;
+            color: #1a237e;
         }
         .btn {
             display: inline-block;
             background: #0d47a1;
-            color: white;
-            padding: 10px 15px;
+            color: #fff;
+            padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
-            margin-top: 10px;
+            transition: background 0.3s;
         }
         .btn:hover {
             background: #1a237e;
@@ -72,35 +92,14 @@
 </head>
 <body>
 
+<header>
+    <div>
+        <h1>Алексей Качалий</h1>
+        <p>Консультант по финансовому инжинирингу и аналитике фиксированного дохода</p>
+    </div>
+</header>
+
 <div class="container">
-    <img src="profile.jpg" alt="Alex Kachaliy" class="profile-img">
-    <h1>Alex Kachaliy</h1>
-    <p><strong>Financial Engineering & Fixed Income Analytics Consultant</strong></p>
-    
-    <div class="section">
-        <h2>About Me</h2>
-        <p>Experienced software engineer specializing in Fixed Income analytics, MBS modeling, and financial software development. Passionate about solving complex financial challenges with technology.</p>
-    </div>
-
-    <div class="section">
-        <h2>Technical Skills</h2>
-        <p>C++, Python, SQL, VBA, Fixed Income valuation, MBS modeling, Intex Library, Rogue Wave Library.</p>
-    </div>
-
-    <div class="section">
-        <h2>Experience</h2>
-        <p><strong>Rockport, NYC</strong> - Senior Software Developer (2017-2019)</p>
-        <p><strong>Royal Bank of Scotland</strong> - Director, Financial Engineering (2000-2011)</p>
-        <p>More details available upon request.</p>
-    </div>
-
-    <div class="section contact">
-        <h2>Contact</h2>
-        <p>📧 <a href="mailto:alex@kachaliy.com">alex@kachaliy.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/alex-kachaliy-b8816719" target="_blank">LinkedIn Profile</a></p>
-        <a href="mailto:alex@kachaliy.com" class="btn">Email Me</a>
-    </div>
-</div>
-
-</body>
-</html>
+    <section>
+        <h2>Обо мне</h2>
+        <p>Опытный инженер-программист, специализирующийся на аналитике фиксированного дохода, моделировании MBS и разработке финансового программного обеспечения. Стрем57
