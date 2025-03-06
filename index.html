@@ -1,41 +1,78 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Алексей Качалий - Консультант по финансовому инжинирингу</title>
+    <title>Alex Kachaliy - Financial Engineering Consultant</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
         }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
         header {
-            background: url('background-video.mp4') no-repeat center center/cover;
+            position: relative;
+            width: 100%;
             height: 100vh;
+            overflow: hidden;
+        }
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: #fff;
             text-align: center;
+            color: #fff;
+            padding: 20px;
         }
-        header h1 {
+        .overlay h1 {
             font-size: 3em;
             margin: 0;
         }
-        header p {
+        .overlay p {
             font-size: 1.2em;
+            margin: 10px 0 20px;
+        }
+        .overlay a {
+            display: inline-block;
+            background: #0d47a1;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .overlay a:hover {
+            background: #1a237e;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
         section {
-            margin: 50px 0;
+            margin-bottom: 50px;
         }
         h2 {
             font-size: 2em;
@@ -55,7 +92,7 @@
         }
         .skill, .job {
             flex: 1 1 calc(50% - 20px);
-            background: #fff;
+            background: #f4f4f4;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -76,30 +113,49 @@
         .contact a:hover {
             color: #1a237e;
         }
-        .btn {
-            display: inline-block;
-            background: #0d47a1;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background: #1a237e;
-        }
     </style>
 </head>
 <body>
 
 <header>
-    <div>
-        <h1>Алексей Качалий</h1>
-        <p>Консультант по финансовому инжинирингу и аналитике фиксированного дохода</p>
+    <video autoplay muted loop>
+        <source src="background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+        <h1>Alex Kachaliy</h1>
+        <p>Financial Engineering & Fixed Income Analytics Consultant</p>
+        <a href="#contact">Contact Me</a>
     </div>
 </header>
 
 <div class="container">
     <section>
-        <h2>Обо мне</h2>
-        <p>Опытный инженер-программист, специализирующийся на аналитике фиксированного дохода, моделировании MBS и разработке финансового программного обеспечения. Стрем57
+        <h2>About Me</h2>
+        <p>Experienced software engineer specializing in Fixed Income analytics, MBS modeling, and financial software development. Passionate about solving complex financial challenges with technology.</p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>C++, Python, SQL, VBA</p>
+            </div>
+            <div class="skill">
+                <h3>Financial Expertise</h3>
+                <p>Fixed Income valuation, MBS modeling</p>
+            </div>
+            <div class="skill">
+                <h3>Libraries & Tools</h3>
+                <p>Intex Library, Rogue Wave Library</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="job">
+                <h3>Rockport, NYC</h3>
+                <p><strong>37
