@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
+            color: #616161;
         }
         .container {
             width: 80%;
@@ -20,29 +20,53 @@
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            text-align: center;
         }
         .profile-img {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 20px;
+            border: 3px solid #1a237e;
         }
         h1 {
-            color: #333;
+            color: #1a237e;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #0d47a1;
+            border-bottom: 2px solid #0d47a1;
+            display: inline-block;
+            padding-bottom: 5px;
         }
         p {
-            color: #666;
             font-size: 18px;
+            line-height: 1.6;
         }
-        .contact {
-            margin-top: 20px;
-            font-size: 18px;
+        .section {
+            margin-top: 30px;
+            padding: 10px;
+            text-align: left;
         }
         .contact a {
-            color: #0073e6;
+            color: #0d47a1;
             text-decoration: none;
             font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            background: #0d47a1;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #1a237e;
         }
     </style>
 </head>
@@ -51,12 +75,30 @@
 <div class="container">
     <img src="profile.jpg" alt="Alex Kachaliy" class="profile-img">
     <h1>Alex Kachaliy</h1>
-    <p>Financial Engineering & Fixed Income Analytics Consultant</p>
-    <p>Specializing in MBS, CMO, Fixed Income valuation, and software development.</p>
+    <p><strong>Financial Engineering & Fixed Income Analytics Consultant</strong></p>
     
-    <div class="contact">
-        <p>📧 <a href="mailto:alex@example.com">alex@example.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/alex-kachaliy" target="_blank">LinkedIn Profile</a></p>
+    <div class="section">
+        <h2>About Me</h2>
+        <p>Experienced software engineer specializing in Fixed Income analytics, MBS modeling, and financial software development. Passionate about solving complex financial challenges with technology.</p>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <p>C++, Python, SQL, VBA, Fixed Income valuation, MBS modeling, Intex Library, Rogue Wave Library.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <p><strong>Rockport, NYC</strong> - Senior Software Developer (2017-2019)</p>
+        <p><strong>Royal Bank of Scotland</strong> - Director, Financial Engineering (2000-2011)</p>
+        <p>More details available upon request.</p>
+    </div>
+
+    <div class="section contact">
+        <h2>Contact</h2>
+        <p>📧 <a href="mailto:alex@kachaliy.com">alex@kachaliy.com</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/alex-kachaliy-b8816719" target="_blank">LinkedIn Profile</a></p>
+        <a href="mailto:alex@kachaliy.com" class="btn">Email Me</a>
     </div>
 </div>
 
