@@ -7,23 +7,25 @@
     <meta name="keywords" content="financial engineering, banking consultant, fixed income, MBS modeling, risk management, financial software">
     <meta name="author" content="Alex Kachaliy">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Alex Kachaliy - Financial Engineering Consultant</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #121212; /* Темный фон */
+            color: #e0e0e0; /* Светлый текст */
+            line-height: 1.6;
         }
         .container {
             width: 90%;
             max-width: 900px;
             margin: 40px auto;
-            background: white;
+            background: #1e1e1e; /* Темный контейнер */
             padding: 30px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
             text-align: center;
         }
         .profile-img {
@@ -31,59 +33,104 @@
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid #1a237e;
+            border: 4px solid #0d47a1; /* Синий акцент */
             margin-bottom: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .profile-img:hover {
+            transform: scale(1.05);
+            border-color: #ffc107; /* Золотистый акцент */
         }
         h1 {
-            color: #1a237e;
+            color: #0d47a1; /* Синий акцент */
             font-size: 2.5em;
             margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        h1:hover {
+            color: #ffc107; /* Золотистый акцент */
         }
         h2 {
-            color: #0d47a1;
+            color: #ffc107; /* Золотистый акцент */
             font-size: 1.8em;
-            border-bottom: 2px solid #0d47a1;
+            border-bottom: 2px solid #ffc107;
             display: inline-block;
             padding-bottom: 5px;
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.2em;
-            line-height: 1.6;
+            font-size: 1.1em;
             margin-bottom: 15px;
+            color: #e0e0e0; /* Светлый текст */
         }
         .section {
             margin-top: 30px;
             text-align: left;
         }
         .contact a {
-            color: #0d47a1;
+            color: #ffc107; /* Золотистый акцент */
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
         .contact a:hover {
-            text-decoration: underline;
+            color: #0d47a1; /* Синий акцент */
         }
         .btn {
             display: inline-block;
-            background: #0d47a1;
+            background: linear-gradient(45deg, #0d47a1, #1a237e); /* Градиентный фон */
             color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
+            padding: 12px 25px;
+            border-radius: 8px;
             text-decoration: none;
-            margin-top: 10px;
-            transition: background 0.3s ease, transform 0.3s ease;
+            margin: 10px 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
         .btn:hover {
-            background: #1a237e;
-            transform: scale(1.05);
+            transform: translateY(-3px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(45deg, #1a237e, #0d47a1); /* Инвертированный градиент */
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #0d47a1; /* Синий фон */
+            color: white;
+            border-radius: 8px;
+        }
+        footer a {
+            color: #ffc107; /* Золотистый акцент */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #e0e0e0; /* Светлый текст */
+        }
+        blockquote {
+            border-left: 4px solid #ffc107;
+            padding-left: 15px;
+            margin: 20px 0;
+            color: #e0e0e0;
+            font-style: italic;
+        }
+        blockquote cite {
+            display: block;
+            margin-top: 10px;
+            color: #ffc107;
+            font-weight: bold;
+        }
+        .icon {
+            margin-right: 10px;
+            color: #ffc107; /* Золотистый акцент */
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <img src="profile.jpg" alt="Alex Kachaliy" class="profile-img">
+    <img src="profile.jpg" alt="Alex Kachaliy - Financial Engineering Consultant" class="profile-img">
     <h1 aria-label="Alex Kachaliy, Financial Engineering and Banking Consultant">Alex Kachaliy</h1>
     <p><strong>Financial Engineering & Banking Consultant</strong></p>
 
@@ -109,17 +156,25 @@
         <p>Developed high-performance financial platforms for commercial real estate and fixed income analytics.</p>
     </div>
 
+    <div class="section">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"Alex is an exceptional financial engineer with deep expertise in risk management and analytics."</p>
+            <cite>— John Doe, CEO at XYZ Bank</cite>
+        </blockquote>
+    </div>
+
     <div class="section contact">
         <h2>Contact</h2>
-        <p>📧 <a href="mailto:alex@kachaliy.com">alex@kachaliy.com</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/alex-kachaliy-b8816719" target="_blank">LinkedIn Profile</a></p>
-        <a href="mailto:alex@kachaliy.com" class="btn">Email Me</a>
-        <a href="path-to-your-resume.pdf" class="btn" download>Download Resume</a>
+        <p><i class="fas fa-envelope icon"></i><a href="mailto:alex@kachaliy.com">alex@kachaliy.com</a></p>
+        <p><i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/alex-kachaliy-b8816719" target="_blank">LinkedIn Profile</a></p>
+        <a href="mailto:alex@kachaliy.com" class="btn"><i class="fas fa-paper-plane"></i> Email Me</a>
+        <a href="path-to-your-resume.pdf" class="btn" download><i class="fas fa-download"></i> Download Resume</a>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2025 Alex Kachaliy. All rights reserved.</p>
+    <p>&copy; 2025 Alex Kachaliy. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
 </footer>
 
 </body>
