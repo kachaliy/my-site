@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SMS Consent Form – Alex Kachaliy</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 40px;
+        max-width: 600px;
+        margin: auto;
+      }
+      input {
+        padding: 8px;
+        width: 100%;
+        margin: 8px 0;
+      }
+      label {
+        font-weight: bold;
+      }
+      .disclosure {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Contact Form</h2>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br />
+
+      <label for="phone">Phone Number:</label><br />
+      <input type="tel" id="phone" name="phone" /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div class="disclosure">
+      By submitting your number, you agree to receive SMS messages from Alex
+      Kachaliy. Reply STOP to opt out.
+    </div>
+  </body>
+</html>
